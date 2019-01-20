@@ -4,14 +4,10 @@
 // ==============================================================================
 
 var express = require("express");
-
-// ==============================================================================
-// EXPRESS CONFIGURATION
-// This sets up the basic properties for our express server
-// ==============================================================================
-
-// Tells node that we are creating an "express" server
 var app = express();
+
+//setting middleware
+app.use(express.static('app')); //Serves images from data folder
 
 // Sets an initial port. We"ll use this later in our listener
 var PORT = process.env.PORT || 8080;
@@ -25,9 +21,6 @@ app.use(express.json());
 // The below points our server to a series of "route" files.
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
-var dir = process.cwd();
-
-console.log("cwd :" + dir);
 
 require("./app/routing/htmlRoutes")(app);
 require("./app/routing/apiRoutes")(app);

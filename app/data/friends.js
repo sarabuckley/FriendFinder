@@ -8,7 +8,7 @@
 var friendArray = [
   {
   "name":"Mr. Purrfect",
-  "photo":"cat.jpg",
+  "photo":"/data/cat.png",
   "scores":[
       5,
       1,
@@ -23,7 +23,7 @@ var friendArray = [
   },
   {
     "name":"Miriam Jones",
-    "photo":"Miriam.jpg",
+    "photo":"/data/miriam.png",
     "scores":[
         1,
         2,
@@ -38,7 +38,7 @@ var friendArray = [
     },
     {
       "name":"Bill Green",
-      "photo":"Bill.jpg",
+      "photo":"/data/bill.png",
       "scores":[
           1,
           1,
@@ -53,7 +53,7 @@ var friendArray = [
       },
       {
         "name":"Jacob Smith",
-        "photo":"Jacob.jpg",
+        "photo":"/data/jacob.png",
         "scores":[
             1,
             4,
@@ -68,7 +68,7 @@ var friendArray = [
         },
         {
           "name":"Alison Li",
-          "photo":"Alison.jpg",
+          "photo":"/data/alison.png",
           "scores":[
               3,
               3,
